@@ -52,13 +52,22 @@ public class Billing {
             File file = new File(ordersFilename);
             Scanner sc = new Scanner(file);
             sc.nextLine();
+            int count = 0;
+            String cardnumber = "mani";
             while (sc.hasNextLine()) {
                 String line = sc.nextLine().replace("\"", "");
                 String[] lineData = line.split(",");
-                Order order = new Order(lineData[0], Integer.parseInt(lineData[1]), lineData[2]);
-                data.add(order);
+                if (count <= 0) {
+                    Order order = new Order(lineData[0], Integer.parseInt(lineData[1]), lineData[2]);
+                    count = count + 1;
+                    cardnumber = lineData[2];
+                    data.add(order);
+                } else {
+                    Order order = new Order(lineData[0], Integer.parseInt(lineData[1]), cardnumber);
+                    data.add(order);
+                }
             }
-        } catch (FileNotFoundException ex) {
+        }catch (FileNotFoundException ex) {
             System.err.println("Orders Error: " + ex.getMessage());
         }
 
