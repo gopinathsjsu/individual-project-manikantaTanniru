@@ -29,7 +29,11 @@ request or to pass it to the next handler in the chain.
 
 ## UML CLASS DIAGRAM
 
-![UML Class Diagram](uml.jpg)
+<p float="left">
+  <img src="uml.jpeg" width="500" height="500"/>
+  
+  
+</p>
 
 
 
