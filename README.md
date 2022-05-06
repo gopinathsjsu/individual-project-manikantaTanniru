@@ -35,6 +35,16 @@ request or to pass it to the next handler in the chain.
 
 ##Test Cases Screenshots:
 
-Test Case:1
+The first Testcase is with the sample input provided in the Assignment. As there is cap on the quantity of each category, it is throwingincorrect quantityies error to the log.txt file.
+
+![Test Case 1](testcase1.jpeg)
+
+Happy Path Test case, the  output has been posted onto output.csv file
+
+![Test Case 2](testcase2.jpeg)
+
+
+
+
 
 
