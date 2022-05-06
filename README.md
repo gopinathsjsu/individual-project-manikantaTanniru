@@ -30,7 +30,7 @@ request or to pass it to the next handler in the chain.
 ## UML CLASS DIAGRAM
 
 <p float="left">
-  <img src="uml.jpeg" width="500" height="500"/>
+  <img src="uml.jpg" width="500" height="500"/>
   
   
 </p>
