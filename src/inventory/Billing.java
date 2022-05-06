@@ -16,7 +16,7 @@ public class Billing {
             while (sc.hasNextLine()) {
                 String line = sc.nextLine().replace("\"", "");
                 String[] lineData = line.split(",");
-                Inventory inventory = new Inventory(lineData[0].trim(), lineData[1].trim(),
+                Inventory inventory = new Inventory(lineData[1].trim(), lineData[0].trim(),
                         Integer.parseInt(lineData[2].trim()), Double.parseDouble(lineData[3].trim()));
                 data.add(inventory);
             }
@@ -202,15 +202,5 @@ public class Billing {
         pw.close();
     }
 
-//    public static void updateAmount(double amount) throws IOException {
-//        FileWriter pw = new FileWriter("Output.csv");
-//        pw.append("\n");
-//        pw.append( "Amt Paid");
-//        pw.append("\n");
-//        pw.append(amount + "s");
-//        pw.append("\n");
-//        pw.flush();
-//        pw.close();
-//    }
 
 }
